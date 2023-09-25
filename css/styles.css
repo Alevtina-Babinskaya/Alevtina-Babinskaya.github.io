@@ -3,6 +3,11 @@
         display: inline;
       
     }
+
+    .pageHeader ul {
+        display: none;
+        
+    }
   }
 body {
     
@@ -38,7 +43,10 @@ body a:visited {
 }
 
 .burger {
-    margin: auto
+    width: 24px;
+    height: 24px;
+    display: none;
+
 }
 
 .pageHeader nav {

@@ -3,6 +3,7 @@ const inputName = document.getElementById('fName');
 const inputEmail = document.getElementById('fMail');
 const message = document.getElementById('fMessage'); 
 const ul = document.getElementById('messagePool');
+//function posts new message when user fills out the form and pushes submit button
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -18,7 +19,6 @@ form.addEventListener('submit', (e) => {
     const span = document.createElement('span');
     const removeButton = document.createElement('button');
     const editButton = document.createElement('button');
-     //   removeButton.id = Name;
     ul.appendChild(li);
     li.appendChild(p);
     p.appendChild(a);
@@ -38,6 +38,9 @@ form.addEventListener('submit', (e) => {
     
     
 });
+
+// the function allows user to delete and edit posted messages.
+
 ul.addEventListener('click', (e) => {
     const button = e.target;
     const li = button.parentNode;
@@ -46,8 +49,6 @@ ul.addEventListener('click', (e) => {
         ul.removeChild(li);
     }
     else if (button.textContent === 'Edit') {
-       //const span = p.getElementsByTagName(span);
-       //console.log (span.textContent);
        const input = document.createElement('input');
        const span = p.lastElementChild;
        input.value = span.textContent;
