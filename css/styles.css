@@ -6,7 +6,7 @@
 
     .pageHeader ul {
         display: none;
-        
+
     }
   }
 body {
@@ -27,7 +27,7 @@ body a:hover {
 }
 
 body a:visited {
-    color: #034444;
+    color: #098080;
 }
 
 /* header styles */
