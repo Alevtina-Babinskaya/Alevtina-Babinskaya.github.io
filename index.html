@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title>Final project at CTD Intro</title>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <!--header and menu-->
+    <header class="pageHeader">
+        <nav>
+        <div class="myName"><img src="img/myPhoto.jpg"><span>Alevtina Babinskaya</span></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#message">Leave a message</a></li>
+        </ul>
+        
+        </nav>
+    </header>
+    <!-- content -->
+    <div class="sections" >
+        <div id="about">
+        <h2>About</h2>
+        <p>Hello, my name is Alevtina. I am a UX/UI designer with over 5 years of expertise in UX research and creating corporate solutions for different companies in Russia and USA.
+            I also have experience and skills as front-end developer. Having strong analytics mind I am capable of solving complex task that require long thoughtfull work and focus on details.
+            I am an avid and quick learner and perfictionist in a good way.   
+        </p>
+
+        <p> I am passionate about psycology and sociology, that helps me with UX research and usability testing. 
+            I also crazy about art and hand crafting. I think creativity changes people's life and fills everyone with energy.
+        </p>
+     </div>     
+        
+    
+    <div id="experience" class="experienceBody">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+        <p><b>PropertyMinder, San Jose</b><span class="experiencePosition"> Product Designer </span></p>
+        <p class="experienceDates">October 2022 – August 2023</p>
+    </li>    
+    
+        <li>
+        <p><b>UsabilityLab, Moscow</b><span class="experiencePosition">UX Designer, UX Researcher </span></p>
+            <p class="experienceDates">October 2017 – June 2019</p>
+         </li>       
+        </ul>
+    </div>
+    <div id="skills">
+        <h2 >Skills</h2>
+        <ul>
+            <li>Java Script</li>
+            <li>HTML+CSS</li>
+            <li>User Research</li>
+            <li>Business Analysis</li>
+            <li>Interaction Design</li>
+            <li>Visual Design</li>
+            <li>Usability Testing</li>
+           
+        </ul>
+        <h2 id="projects">Projects</h2>
+        <ul class="projectsList">
+            <li>
+                <a href="https://github.com/Alevtina-Babinskaya/finalProjectIntro">
+                Code the Dream Final Project
+            </a>
+        </li>
+        </ul>
+    </div>
+    <div></div>
+        <h2>Leave a message</h2>
+        <div>
+            <form class="messageForm" id="messageToPost">
+                <label for="fName">Name</label><br>
+                <input type="text" id="fName" name="fName" required> <br>
+                <label for="fMail">Email</label><br>
+                <input type="email" id="fMail" name="fMail" required><br>
+                <label for="fMessage">Message</label><br>
+                <textarea id="fMessage" name="fMessage" rows="6" cols="50" required></textarea><br>
+                <button type="submit" value="submit" name="submit" class="submitBtn">Submit</button>
+            </form>
+        </div>
+        <div>
+            <h2>Messages</h2>
+            <ul id="messagePool" class="messagePool">
+            
+
+            </ul>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="pageFooter">
+        <div class="container">
+            <span id="copyright"> </span>
+            <ul>
+                <li><a href="mailto:alevtina.babinskaya@yahoo.com"><img src="img/i_mail.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/alevtina-babinskaya-76856962/"><img src="img/i_linkedin.png"></a></li>
+                <li><a href="dribbble.com/alevtina-babinskaya"><img src="img/i_dribble.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script>
+    const date = new Date();    
+    document.getElementById('copyright').innerHTML = "Copyright: Alevtina Babinskaya " + date.getFullYear();</script>
+</body>
+</html>

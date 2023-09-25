@@ -1,0 +1,289 @@
+@media only screen and (max-width: 900px) {
+    .burger { 
+        display: inline;
+      
+    }
+  }
+body {
+    
+    padding: 0;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+body a:link {
+    color:#09A1A1;
+
+}
+body a:hover {
+    text-decoration: none;
+}
+
+body a:visited {
+    color: #034444;
+}
+
+/* header styles */
+.pageHeader {
+    background-color: #09A1A1;
+    color: #FFFFFF;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    line-height: 80px;
+    
+}
+
+.burger {
+    
+}
+
+.pageHeader nav {
+    margin-left: 20%;
+    margin-right: auto;
+    height: 80px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 730px;
+}
+
+.pageHeader img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.pageHeader ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.pageHeader ul li {
+display: inline;
+list-style: none;
+padding: 15px 0;
+margin-left: 15px;
+/*line-height: 60px;*/
+}
+
+.pageHeader .myName {
+    font-size: 24px;
+    display: inline-block;
+    height: 100%;
+}
+
+.pageHeader .myName span {
+    padding: 0 40px 0 10px;
+}
+
+.pageHeader ul li a:link {
+   color: #FFFFFF; 
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.pageHeader ul li a:hover, .pageHeader ul li a:active, .pageHeader ul li a:visited {
+    text-decoration: underline;
+    color: #FFFFFF;
+ }
+
+ /*body styles*/
+
+ .sections {
+    width: 90%;
+    margin-left: 20%;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.sections h2 {
+    font-size: 24px;
+    color: #F1440D;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+
+.sections h3 {
+    display: inline;
+    font-weight: 500;
+    font-size: 18px;
+    color:#333333;
+
+}
+
+.sections .experiencePosition {
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.sections li {
+    list-style-type: square;
+
+}
+
+.experienceBody ul {
+    padding: 0;
+    margin: 0;
+}
+.experienceBody ul li {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px 0;
+
+}
+.experienceBody ul li p {
+display: inline;
+line-height: 20px;
+vertical-align: middle; 
+margin: 10px 0;   
+
+}
+.experienceBody b {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+.experienceDates {
+    padding: 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+
+.projectsList {
+    padding: 0;
+}
+
+.projectsList li {
+    list-style: none;
+}
+
+/* form */
+.messageForm input {
+    border: #AAAAAA 1px solid;
+    height: 22px;
+}
+
+.messageForm label {
+    line-height: 28px;
+}
+
+.messageForm textarea {
+    border: #AAAAAA 1px solid;
+}
+
+.messageForm .submitBtn {
+    background-color: #09A1A1;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border:#034444 1px solid;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/*message pool*/
+
+.messagePool {
+    margin: 20px 0;
+    padding: 0;
+    max-width: 700px;
+    
+}
+
+.messagePool li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 20px 0;
+    border-bottom: #AAAAAA 1px solid;
+    vertical-align: middle;
+    line-height: 26px;
+}
+
+.messagePool li p {
+    padding: 0;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.messagePool a:link, .messagePool a:visited {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.messagePool a:hover {
+    text-decoration: underline;
+}
+
+.messagePool button {
+   
+    color: #FFFFFF;
+    padding: 5px 10px;
+    
+    height: 26px;
+    width: auto;
+    cursor: pointer;
+    font-size: 14px; 
+    margin-left:10px;  
+}
+.messagePool button.removeBtn {
+    background-color: #F1440D;
+    border:#8a0303 1px solid;
+}
+
+.messagePool button.editBtn {
+    background-color: #09A1A1;
+    border:#034444 1px solid; 
+}
+
+/*footer styles*/
+.pageFooter {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 30px;
+   
+}
+.container {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: auto;
+    width: 90%;
+}
+
+.pageFooter span {
+   font-size: 11px; 
+   color: #DDDDDD;
+   line-height: 30px;
+}
+
+.pageFooter ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.pageFooter ul li {
+    display: inline;
+}
+
+.pageFooter img {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+
+}
