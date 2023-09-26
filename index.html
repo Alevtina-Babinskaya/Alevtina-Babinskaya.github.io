@@ -2,7 +2,9 @@
 <html>
 <title>Final project at CTD Intro</title>
 <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:575px)" href="css/phone.css">
 
 </head>
 <body>
@@ -10,7 +12,7 @@
     <header class="pageHeader">
         <nav>
         <div class="myName"><img src="img/myPhoto.jpg"><span>Alevtina Babinskaya</span></div>
-        <div class="burger"><img src="img/humburger_icon.jpg"></div>
+        <div class="burger"><img src="img/humburger_icon.gif"></div>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -50,27 +52,17 @@
          </li>       
         </ul>
     </div>
-    <div id="skills">
+    
         <h2 >Skills</h2>
-        <ul>
-            <li>Java Script</li>
-            <li>HTML+CSS</li>
-            <li>User Research</li>
-            <li>Business Analysis</li>
-            <li>Interaction Design</li>
-            <li>Visual Design</li>
-            <li>Usability Testing</li>
+        <ul id="skills">
+           
            
         </ul>
-        <h2 id="projects">Projects</h2>
-        <ul class="projectsList">
-            <li>
-                <a href="https://github.com/Alevtina-Babinskaya/Alevtina-Babinskaya.github.io">Code the Dream Portfolio Project
-            </a>
-        </li>
+        <h2>Projects</h2>
+        <ul class="projectsList" id="projects">
+            
         </ul>
-    </div>
-    <div></div>
+    
         <h2>Leave a message</h2>
         <div>
             <form class="messageForm" id="messageToPost">

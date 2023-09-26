@@ -62,7 +62,7 @@ body a:visited {
 }
 
 .pageHeader ul {
-    display: inline-block;
+    display: none;
     margin: 0;
     padding: 0;
    

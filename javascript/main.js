@@ -1,3 +1,40 @@
+// Creating list of skills
+function createSkills() {
+const skills = ['Java Script', 
+                'HTM + CSS', 
+                'UX Design', 
+                'Visual Design', 
+                'User Research', 
+                'Usability Testing'];
+const skillList = document.getElementById('skills');
+for ( let i = 0; i < skills.length; i++) {
+     const li = document.createElement('li');
+     li.textContent = skills[i];
+     skillList.appendChild(li);
+}
+};
+createSkills();
+
+
+async function logProjects() {
+let req = await fetch ("https://api.github.com/users/Alevtina-Babinskaya/repos");
+let data = await req.text();
+let dataObject = JSON.parse(data);
+console.log (dataObject);
+const projectList = document.getElementById('projects');
+for (let repository of dataObject ) {
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="${repository.html_url}">${repository.full_name}</a>`;
+    projectList.appendChild(li);
+}     
+
+      
+       }
+logProjects();
+ 
+
+
+function messagePosting() {
 const form = document.getElementById('messageToPost');
 const inputName = document.getElementById('fName');
 const inputEmail = document.getElementById('fMail');
@@ -39,6 +76,7 @@ form.addEventListener('submit', (e) => {
     
 });
 
+
 // the function allows user to delete and edit posted messages.
 
 ul.addEventListener('click', (e) => {
@@ -67,4 +105,5 @@ ul.addEventListener('click', (e) => {
     }
 
 });
-
+};
+messagePosting();
