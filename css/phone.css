@@ -1,12 +1,9 @@
-
-
-
 body {
     
     padding: 0;
     color: grey;
-    font-family: 'Segoe UI', Tahoma, Verdana;
-    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
     margin: 0;
     overflow-x: hidden;
 }
@@ -25,18 +22,20 @@ body a:visited {
 
 /* header styles */
 .pageHeader {
+    /*background-color: #09A1A1;*/
     background-color: #09A1A1;
     color: #FFFFFF;
     width: 100%;
-    height: 80px;
+    height: 60px;
     padding: 0;
     margin: 0;
-    line-height: 80px;
+   
     
 }
 
 .burger {
-    display: none;
+    display: inline;
+    margin-right: 10px;
 }
 
 .burger img {
@@ -51,50 +50,58 @@ body a:visited {
     max-width: 900px;
     display: flex;
     justify-content: space-between;
-    min-width: 730px;
 }
 
 .pageHeader .myName img {
-    width: 60px;
+    width: 40px;
     height: auto;
     border-radius: 50%;
     vertical-align: middle;
 }
 
 .pageHeader ul {
-    display: none;
+    visibility: hidden;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    z-index: 10;
+    background-color: #FFFFFF;
+    width: 100%;
    
 }
 
 .pageHeader ul li {
-display: inline;
+display: block;
 list-style: none;
-padding: 15px 0;
-margin-left: 15px;
+padding: 0 15px;
+height: 30px;
+line-height: 24px;
+
 /*line-height: 60px;*/
 }
 
 .pageHeader .myName {
-    font-size: 24px;
+    font-size: 18px;
     display: inline-block;
     height: 100%;
+    margin-left: 10px;
 }
 
 .pageHeader .myName span {
-    padding: 0 40px 0 10px;
+    padding: 0 20px 0 10px;
 }
 
-.pageHeader ul li a:link {
-   color: #FFFFFF; 
+.pageHeader ul li a:link, .pageHeader ul li a:visited  {
+    color: #034444;
    font-weight: 600;
    text-decoration: none;
 }
 
-.pageHeader ul li a:hover, .pageHeader ul li a:active, .pageHeader ul li a:visited {
+.pageHeader ul li a:hover, .pageHeader ul li a:active, {
     text-decoration: underline;
-    color: #FFFFFF;
+    color: #034444;
  }
 
  /*body styles*/
@@ -104,11 +111,16 @@ margin-left: 15px;
     max-width: 900px;
 }
 
+.sections div {
+    padding: 0px 10px;
+}
+
 .sections h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #F1440D;
     font-weight: 400;
     padding-top: 20px;
+    padding-left: 10px;
 }
 
 
@@ -142,13 +154,13 @@ margin-left: 15px;
 }
 .experienceBody ul li p {
 display: inline;
-line-height: 20px;
+line-height: 18px;
 vertical-align: middle; 
 margin: 10px 0;   
 
 }
 .experienceBody b {
-    font-size: 18px;
+    font-size: 16px;
     color: #333333;
     font-weight: 500;
 }
@@ -160,7 +172,7 @@ margin: 10px 0;
 
 
 .projectsList {
-    padding: 0;
+    padding: 0px 10px;
 }
 
 .projectsList li {

@@ -20,7 +20,6 @@ async function logProjects() {
 let req = await fetch ("https://api.github.com/users/Alevtina-Babinskaya/repos");
 let data = await req.text();
 let dataObject = JSON.parse(data);
-console.log (dataObject);
 const projectList = document.getElementById('projects');
 for (let repository of dataObject ) {
     const li = document.createElement('li');
@@ -107,3 +106,27 @@ ul.addEventListener('click', (e) => {
 });
 };
 messagePosting();
+
+/* burger menu add listeners to burger button and hidden website menu
+ in case the screen width is less than 575px (smartphone).   
+ */
+function burgerMenu() {
+    if (window.innerWidth < 575) {
+const menu = document.getElementById('menu');
+const burger = document.getElementById('burger');
+burger.addEventListener('click', visibilityChange);
+menu.addEventListener('click', visibilityChange);
+};
+};
+
+function visibilityChange() {
+const menu = document.getElementById('menu');
+if (menu.style.visibility == 'hidden') {
+    menu.style.visibility = "visible";
+}
+else {
+    menu.style.visibility = "hidden";
+}
+};
+
+burgerMenu();
