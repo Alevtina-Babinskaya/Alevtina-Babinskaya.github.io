@@ -111,7 +111,7 @@ messagePosting();
  in case the screen width is less than 575px (smartphone).   
  */
 function burgerMenu() {
-    if (window.innerWidth < 575) {
+    if (window.innerWidth < 1080) {
 const menu = document.getElementById('menu');
 const burger = document.getElementById('burger');
 burger.addEventListener('click', visibilityChange);
